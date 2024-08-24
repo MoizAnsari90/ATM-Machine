@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Machine</title>
+    <link rel="shortcut icon" href="img/images-Mezaan.jfif" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+        <div class="container">
+            <div class="app_box">
+                <div class="atm_box">
+                    <header>
+                        <h1>ATM</h1>
+                    </header>
+                    <div class="light_box">
+                        <div class="led"></div>
+                    </div>
+                    
+                    <div class="screen_box">
+                        <div class="tv_screen">
+                            <section id="start">
+                                <div class="tv">
+                                    <h6>Enter Your Pin</h6>
+                                    <input type="text" placeholder="Enter Pin" name="input" id="EInput">
+                                    <button id="BtnPin">ENTER</button>
+                                </div>
+                            </section>
+                            <section id="second" style = "display : none;" >
+                                <div class="tv">
+                                    <h6>Select Your Option</h6>
+                                    <button id="BtnCashWithdraw">Cash Withdraw</button>
+                                    <button id="BtnBalanceAmt">Check Balance</button>
+                                </div>
+                            </section>
+                            <section id="third" style = "display : none;">
+                                <div class="tv">
+                                    <h6>Select Your Option</h6>
+                                    <button id="btnK5">5000</button>
+                                    <button id="btnK10">10000</button>
+                                    <button id="btnK50">50000</button>
+                                    <button id="btnOth">Other</button>
+                                </div>
+                            </section> 
+                            <section id="fiveK" style="display: none;">
+                                    <div class="tv">
+                                        <p id="k5Balance"></p>
+                                        <button id="btnStr1">Finish</button>
+                                    </div>
+                            </section>
+                            <section id="tenK" style="display: none;">
+                                <div class="tv">
+                                    <p id="k10Balance"></p>
+                                    <button id="btnStr2">Finish</button>
+                                </div>
+                            </section>
+                            <section id="fiftyK" style="display: none;">
+                                <div class="tv">
+                                    <p id="k50Balance"></p>
+                                    <button id="btnStr3">Finish</button>
+                                </div>
+                            </section>
+                            <section id="forth" style = "display : none;" >
+                                <div class="tv">
+                                    <p id="balanceDisplay"></p>
+                                    <button id="btnStr">Finish</button>
+                                </div>
+                            </section> 
+                            <section id="fifth" style = "display : none;" >
+                                <div class="tv">
+                                    <h6>Enter Amount</h6>
+                                    <input type="text" placeholder="Enter Amount" name="AmountInput" id="AmtInput">
+                                    <button id="AmountBtn">Enter</button>
+                                </div>
+                            </section>
+                            <section id="otherAmt" style = "display : none;"  >
+                                <div class="tv">
+                                    <p id="otherBalance"></p>
+                                    <button id="btnStr4">Finish</button>
+                                </div>
+                            </section>
+                            <section id="six" style = "display : none;">
+                                <div class="tv">
+                                    <h5>Thank You for Your Transaction </h5>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="key-box">
+                        
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <script src="js/main.js"></script>
+</body>
+</html>
